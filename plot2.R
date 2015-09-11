@@ -1,3 +1,5 @@
+#Note that the relevant data source must be in your work directory
+
 data <- read.table("./household_power_consumption.txt", sep = ";", header=TRUE)
 data2 <- data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"),]
 data2$DateTime = paste(data2$Date,data2$Time)
